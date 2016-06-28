@@ -13,8 +13,8 @@ class CreateWordTable extends Migration
     public function up()
     {
         Schema::create('word',function(Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->text('word');
+            $table->increments('id');
+            $table->string('word');
             $table->timestamps();
         });
     }

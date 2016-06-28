@@ -13,7 +13,7 @@ class WordTableSeeder extends Seeder {
         while ($row = fgetcsv($file)) {
             if ($row[0] != '') {
                 DB::table('word')->insert([
-                    'word' => ucwords(strtolower($row[0]))
+                    'word' => $row[0]
                 ]);
             }
 
