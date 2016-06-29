@@ -15,3 +15,8 @@ Route::get('/', [
     'as' => 'home',
     'uses' => 'DefaultController@index'
 ]);
+
+Route::get('/draw',[
+    'as' => 'draw',
+    'uses' => 'DefaultController@draw'
+]);
